@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/black"
+    android:padding="16dp">
+
+    <!-- Title and Done button -->
+    <TextView
+        android:id="@+id/selectListTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select lists"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/doneButton"
+        android:paddingEnd="16dp"/>
+
+    <!-- Done Button -->
+    <TextView
+        android:id="@+id/doneButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Done"
+        android:textSize="16sp"
+        android:textColor="@android:color/holo_blue_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/selectListTitle" />
+
+    <!-- Suggestions -->
+    <TextView
+        android:id="@+id/suggestionsLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Suggestions"
+        android:textSize="14sp"
+        android:textColor="@android:color/darker_gray"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/doneButton"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Future ideas -->
+    <TextView
+        android:id="@+id/futureIdeas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🔮 Future ideas"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@id/suggestionsLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        android:padding="8dp" />
+
+    <!-- My stack -->
+    <TextView
+        android:id="@+id/myStack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🚀 My stack"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@id/futureIdeas"
+        app:layout_constraintStart_toStartOf="parent"
+        android:padding="8dp" />
+
+    <!-- Inspiration -->
+    <TextView
+        android:id="@+id/inspiration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="✨ Inspiration"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@id/myStack"
+        app:layout_constraintStart_toStartOf="parent"
+        android:padding="8dp" />
+
+    <!-- Create new list -->
+    <TextView
+        android:id="@+id/createList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+ Create list"
+        android:textSize="16sp"
+        android:textColor="@android:color/holo_blue_light"
+        app:layout_constraintTop_toBottomOf="@id/inspiration"
+        app:layout_constraintStart_toStartOf="parent"
+        android:padding="8dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
