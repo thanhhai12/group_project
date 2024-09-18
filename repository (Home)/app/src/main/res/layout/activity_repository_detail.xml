@@ -1,0 +1,100 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Nút quay lại -->
+        <LinearLayout
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingBottom="16dp">
+
+        <!-- Icon quay lại -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back_arrow"
+            android:contentDescription="Back"
+            android:tint="#00A4FF" />
+
+        <!-- Text quay lại -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:textColor="#00A4FF"
+            android:layout_marginStart="8dp"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif-medium" />
+    </LinearLayout>
+
+    <!-- Tên repository -->
+    <TextView
+        android:id="@+id/repoName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Repository Name"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:fontFamily="sans-serif-medium"
+        android:paddingBottom="8dp" />
+
+    <!-- Thông tin về stars, forks -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/repoStars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="★ 0 stars"
+            android:textColor="#FFFFFF"
+            android:layout_marginEnd="16dp" />
+
+        <TextView
+            android:id="@+id/repoForks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⑂ 0 forks"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <!-- Forked from -->
+    <TextView
+        android:id="@+id/repoForkedFrom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forked from some-repo"
+        android:textColor="#AAAAAA"
+        android:paddingTop="8dp"
+        android:paddingBottom="16dp" />
+
+    <!-- Thông tin chi tiết -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="README.md"
+        android:textColor="#FFFFFF"
+        android:fontFamily="sans-serif-medium"
+        android:paddingBottom="8dp" />
+
+    <TextView
+        android:id="@+id/repoDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="USTH ICT Android Development 2024\n- 22BI13148\n- To Thanh Hai\n- Class 1"
+        android:textColor="#AAAAAA"
+        android:textSize="14sp" />
+</LinearLayout>
+    </ScrollView>
